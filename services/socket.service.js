@@ -14,7 +14,6 @@ function setupSocketAPI(http) {
             logger.info(`Socket disconnected [id: ${socket.id}]`)
         })
         socket.on('set-wap-room', room => {
-            console.log('room:', room)
             if (socket.myRoom === room) return
             if (socket.myRoom) {
                 socket.leave(socket.myRoom)
@@ -24,7 +23,6 @@ function setupSocketAPI(http) {
             socket.myRoom = room
         })
         socket.on('update-wap', wap => {
-            // console.log('wap:', wap)
             broadcast({
                 type: 'updated-wap',
                 data: wap,
@@ -123,11 +121,8 @@ async function emitToUser({ type, data, userId }) {
 async function broadcast({ type, data, room = null, userId }) {
     userId = userId.toString()
     logger.info(`Broadcasting event: ${type}`)
-    // console.log('room:', room)
     const excludedSocket = await _getUserSocket(userId)
-    // console.log(excludedSocket)
     if (room && excludedSocket) {
-        console.log(':')
         logger.info(`Broadcast to room ${room} excluding user: ${userId}`)
         excludedSocket.broadcast.to(room).emit(type, data)
     } else if (excludedSocket) {
@@ -144,9 +139,7 @@ async function broadcast({ type, data, room = null, userId }) {
 
 async function _getUserSocket(userId) {
     const sockets = await _getAllSockets()
-    // console.log('sockets:', sockets)
-    const socket = sockets.find(s => s.userId === userId)
-    console.log('socket:', socket)
+    const socket = sockets.find(s => s.id === userId)
     return socket
 }
 async function _getAllSockets() {

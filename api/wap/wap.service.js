@@ -93,6 +93,7 @@ async function update(wap) {
             msgs: wap.msgs,
             schedule: wap.schedule,
         }
+
         // console.log(wapToSave)
         const collection = await dbService.getCollection('wap')
         await collection.updateOne({ _id: ObjectId(wap._id) }, { $set: wapToSave })
