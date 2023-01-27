@@ -88,6 +88,10 @@ async function update(wap) {
             leadsBoards: wap.leadsBoards,
             owner: wap.owner,
             title: wap.title,
+            subscribers: wap.subscribers,
+            chatStartingMsg: wap.chatStartingMsg,
+            msgs: wap.msgs,
+            schedule: wap.schedule,
         }
         console.log(wapToSave)
         const collection = await dbService.getCollection('wap')
