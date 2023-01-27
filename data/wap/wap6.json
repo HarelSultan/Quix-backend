@@ -1,0 +1,741 @@
+{
+    "name": "wap-6",
+    "owner": "admin",
+    "leadsBoards": [
+        {
+            "id": "af8B6k20",
+            "title": "New",
+            "items": []
+        },
+        {
+            "id": "ULFqd4mw",
+            "title": "In Progress",
+            "items": []
+        },
+        {
+            "id": "01OIFtPh",
+            "title": "Done",
+            "items": []
+        }
+    ],
+    "schedule": {
+        "eventDuration": 30,
+        "daysForward": 6,
+        "data": [],
+        "days": ["sunday", "monday", "tuesday", "wednesday", "thursday"],
+        "startHour": 8,
+        "endHour": 17,
+        "meetings": []
+    },
+    "subscribers": [],
+    "cmps": [
+        {
+            "id": "uogfLx",
+            "type": "div",
+            "name": "wap-6-cta",
+            "cmps": [
+                {
+                    "id": "YGn9wU",
+                    "type": "span",
+                    "name": "",
+                    "content": {
+                        "txt": "Join the Club & Get Rewards in Every Order!"
+                    },
+                    "cmps": []
+                },
+                {
+                    "id": "CD8Mto",
+                    "type": "a",
+                    "name": "",
+                    "content": {
+                        "txt": "Sign Up Now",
+                        "href": ""
+                    },
+                    "cmps": []
+                }
+            ]
+        },
+        {
+            "id": "FDyTn2",
+            "type": "div",
+            "name": "wap-6-header",
+            "category": "header",
+            "thumbnail": "https://res.cloudinary.com/dotasvsuv/image/upload/v1674564208/wap-6-header-edited_lqljwr.jpg",
+            "cmps": [
+                {
+                    "id": "vJeHsi",
+                    "type": "div",
+                    "name": "nav",
+                    "cmps": [
+                        {
+                            "id": "gpB8I6",
+                            "type": "a",
+                            "name": "",
+                            "content": {
+                                "txt": "About",
+                                "href": ""
+                            },
+                            "cmps": []
+                        },
+                        {
+                            "id": "h8QTgm",
+                            "type": "a",
+                            "name": "",
+                            "content": {
+                                "txt": "Menu",
+                                "href": ""
+                            },
+                            "cmps": []
+                        },
+                        {
+                            "id": "hMubqt",
+                            "type": "a",
+                            "name": "",
+                            "content": {
+                                "txt": "Contact Us",
+                                "href": ""
+                            },
+                            "cmps": []
+                        }
+                    ]
+                },
+                {
+                    "id": "mREUtq",
+                    "type": "div",
+                    "name": "logo",
+                    "cmps": [
+                        {
+                            "id": "o2sGln",
+                            "type": "img",
+                            "name": "",
+                            "content": {
+                                "imgUrl": "https://res.cloudinary.com/dotasvsuv/image/upload/v1673994996/donut_jzbb69.svg"
+                            },
+                            "cmps": []
+                        },
+                        {
+                            "id": "VWUTEw",
+                            "type": "div",
+                            "name": "label",
+                            "cmps": [
+                                {
+                                    "id": "AdQN2P",
+                                    "type": "img",
+                                    "name": "",
+                                    "content": {
+                                        "imgUrl": "https://res.cloudinary.com/dotasvsuv/image/upload/v1673994993/label_tts609.svg"
+                                    },
+                                    "cmps": []
+                                },
+                                {
+                                    "id": "7gXN1K",
+                                    "type": "span",
+                                    "name": "",
+                                    "content": {
+                                        "txt": "Sugar & Cream"
+                                    },
+                                    "cmps": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "6mWSpm",
+                            "type": "span",
+                            "name": "sub-heading",
+                            "content": {
+                                "txt": "Donut Shop"
+                            },
+                            "cmps": []
+                        }
+                    ]
+                },
+                {
+                    "id": "c4nI9w",
+                    "type": "div",
+                    "name": "login",
+                    "cmps": [
+                        {
+                            "id": "NPMlnA",
+                            "type": "img",
+                            "name": "",
+                            "content": {
+                                "imgUrl": "https://res.cloudinary.com/dotasvsuv/image/upload/v1673994995/user_nsmerg.svg"
+                            },
+                            "cmps": []
+                        },
+                        {
+                            "id": "ImWlMb",
+                            "type": "span",
+                            "name": "",
+                            "content": {
+                                "txt": "Log in"
+                            },
+                            "cmps": []
+                        },
+                        {
+                            "id": "a1opSe",
+                            "type": "button",
+                            "name": "",
+                            "content": {
+                                "txt": "Order Online"
+                            },
+                            "cmps": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "IGqobl",
+            "type": "div",
+            "name": "wap-6-hero",
+            "category": "hero",
+            "thumbnail": "https://res.cloudinary.com/dotasvsuv/image/upload/v1674564273/wap-6-hero_koqlkv.jpg",
+            "cmps": [
+                {
+                    "id": "9oSgyu",
+                    "type": "h1",
+                    "name": "",
+                    "content": {
+                        "txt": "The Best Donuts in Town"
+                    },
+                    "cmps": []
+                },
+                {
+                    "id": "sWErVL",
+                    "type": "div",
+                    "name": "image",
+                    "cmps": []
+                }
+            ]
+        },
+        {
+            "id": "sBSVcm",
+            "type": "div",
+            "name": "wap-6-section-1",
+            "category": "card",
+            "thumbnail": "https://res.cloudinary.com/dotasvsuv/image/upload/v1674563731/wap-6-section-1-edited_l3aoqh.jpg",
+            "cmps": [
+                {
+                    "id": "eUzSHY",
+                    "type": "h2",
+                    "name": "",
+                    "content": {
+                        "txt": "Our Top Flavors"
+                    },
+                    "cmps": []
+                },
+                {
+                    "id": "hh4OP8",
+                    "type": "div",
+                    "name": "flavors-container",
+                    "cmps": [
+                        {
+                            "id": "16Jg9B",
+                            "type": "div",
+                            "name": "",
+                            "cmps": [
+                                {
+                                    "id": "YI2tUC",
+                                    "type": "img",
+                                    "name": "",
+                                    "content": {
+                                        "imgUrl": "https://res.cloudinary.com/dotasvsuv/image/upload/v1673994997/donut1_yznqea.jpg"
+                                    },
+                                    "cmps": []
+                                },
+                                {
+                                    "id": "JeKMPf",
+                                    "type": "span",
+                                    "name": "",
+                                    "content": {
+                                        "txt": "Chocolate Crunch"
+                                    },
+                                    "cmps": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "BEq0l9",
+                            "type": "div",
+                            "name": "",
+                            "cmps": [
+                                {
+                                    "id": "N78ZTn",
+                                    "type": "img",
+                                    "name": "",
+                                    "content": {
+                                        "imgUrl": "https://res.cloudinary.com/dotasvsuv/image/upload/v1673994994/donut2_mlcda9.jpg"
+                                    },
+                                    "cmps": []
+                                },
+                                {
+                                    "id": "G0fdiD",
+                                    "type": "span",
+                                    "name": "",
+                                    "content": {
+                                        "txt": "Caramel Glaze"
+                                    },
+                                    "cmps": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "R7aPGo",
+                            "type": "div",
+                            "name": "",
+                            "cmps": [
+                                {
+                                    "id": "lMjkLm",
+                                    "type": "img",
+                                    "name": "",
+                                    "content": {
+                                        "imgUrl": "https://res.cloudinary.com/dotasvsuv/image/upload/v1673994994/donut3_hhzoi6.jpg"
+                                    },
+                                    "cmps": []
+                                },
+                                {
+                                    "id": "ZkjPUc",
+                                    "type": "span",
+                                    "name": "",
+                                    "content": {
+                                        "txt": "Strawberry Sprinkles"
+                                    },
+                                    "cmps": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "U0bCiD",
+                            "type": "div",
+                            "name": "",
+                            "cmps": [
+                                {
+                                    "id": "kbjAej",
+                                    "type": "img",
+                                    "name": "",
+                                    "content": {
+                                        "imgUrl": "https://res.cloudinary.com/dotasvsuv/image/upload/v1673994995/donut4_o1a2fz.jpg"
+                                    },
+                                    "cmps": []
+                                },
+                                {
+                                    "id": "OLlX6R",
+                                    "type": "span",
+                                    "name": "",
+                                    "content": {
+                                        "txt": "Cookies & Cream"
+                                    },
+                                    "cmps": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "7QTKSa",
+                    "type": "button",
+                    "name": "",
+                    "content": {
+                        "txt": "Order Online"
+                    },
+                    "cmps": []
+                }
+            ]
+        },
+        {
+            "id": "u7Dbr5",
+            "type": "div",
+            "name": "wap-6-cta-2",
+            "category": "section",
+            "thumbnail": "https://res.cloudinary.com/dotasvsuv/image/upload/v1674563731/wap-6-cta-edited_i81jxy.jpg",
+            "cmps": [
+                {
+                    "id": "S6qPZN",
+                    "type": "h2",
+                    "name": "",
+                    "content": {
+                        "txt": "Come Get Your Favorites!"
+                    },
+                    "cmps": []
+                },
+                {
+                    "id": "3EINs1",
+                    "type": "div",
+                    "name": "grid",
+                    "cmps": [
+                        {
+                            "id": "emD5AX",
+                            "type": "div",
+                            "name": "visit",
+                            "cmps": [
+                                {
+                                    "id": "Ltjzz5",
+                                    "type": "img",
+                                    "name": "",
+                                    "content": {
+                                        "imgUrl": "https://res.cloudinary.com/dotasvsuv/image/upload/v1673994995/visit_j5atx4.svg"
+                                    },
+                                    "cmps": []
+                                },
+                                {
+                                    "id": "TSh0M5",
+                                    "type": "span",
+                                    "name": "",
+                                    "content": {
+                                        "txt": "Visit Our Store"
+                                    },
+                                    "cmps": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "FyUO63",
+                            "type": "div",
+                            "name": "order",
+                            "cmps": [
+                                {
+                                    "id": "cWlhG5",
+                                    "type": "img",
+                                    "name": "",
+                                    "content": {
+                                        "imgUrl": "https://res.cloudinary.com/dotasvsuv/image/upload/v1673994993/order_nua1cf.svg"
+                                    },
+                                    "cmps": []
+                                },
+                                {
+                                    "id": "0Carl8",
+                                    "type": "span",
+                                    "name": "",
+                                    "content": {
+                                        "txt": "Order Online & Pickup in Store"
+                                    },
+                                    "cmps": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "ZMmo77",
+                            "type": "div",
+                            "name": "visit",
+                            "cmps": [
+                                {
+                                    "id": "W2zFwj",
+                                    "type": "img",
+                                    "name": "",
+                                    "content": {
+                                        "imgUrl": "https://res.cloudinary.com/dotasvsuv/image/upload/v1673994995/delivery_lrh0o1.svg"
+                                    },
+                                    "cmps": []
+                                },
+                                {
+                                    "id": "nKPNQx",
+                                    "type": "span",
+                                    "name": "",
+                                    "content": {
+                                        "txt": "Get Sugar & Cream at Your Door"
+                                    },
+                                    "cmps": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "2O36xk",
+            "type": "div",
+            "name": "wap-6-section-2",
+            "category": "form",
+            "thumbnail": "https://res.cloudinary.com/dotasvsuv/image/upload/v1674563730/wap-6-form-edited_bjmwks.jpg",
+            "cmps": [
+                {
+                    "id": "RioIyK",
+                    "type": "div",
+                    "name": "",
+                    "cmps": [
+                        {
+                            "id": "615W1N",
+                            "type": "div",
+                            "name": "adress",
+                            "cmps": [
+                                {
+                                    "id": "iPne9s",
+                                    "type": "span",
+                                    "name": "",
+                                    "content": {
+                                        "txt": "Address"
+                                    },
+                                    "cmps": []
+                                },
+                                {
+                                    "id": "qukEky",
+                                    "type": "p",
+                                    "name": "",
+                                    "content": {
+                                        "txt": "500 Terry Francois Street,  San Francisco, CA 94158"
+                                    },
+                                    "cmps": [
+                                        {
+                                            "id": "qBbNtq",
+                                            "type": "br",
+                                            "name": "",
+                                            "cmps": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "oaTG9y",
+                            "type": "div",
+                            "name": "contact",
+                            "cmps": [
+                                {
+                                    "id": "KcST5k",
+                                    "type": "span",
+                                    "name": "",
+                                    "content": {
+                                        "txt": "Contact"
+                                    },
+                                    "cmps": []
+                                },
+                                {
+                                    "id": "5QJazd",
+                                    "type": "p",
+                                    "name": "",
+                                    "content": {
+                                        "txt": "Info@mysite.com 123-456-7890"
+                                    },
+                                    "cmps": [
+                                        {
+                                            "id": "Jop8Pq",
+                                            "type": "br",
+                                            "name": "",
+                                            "cmps": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "mXRrMQ",
+                    "type": "div",
+                    "name": "",
+                    "cmps": [
+                        {
+                            "id": "hUHYcw",
+                            "type": "div",
+                            "name": "opening-hours",
+                            "cmps": [
+                                {
+                                    "id": "iIwXG7",
+                                    "type": "span",
+                                    "name": "",
+                                    "content": {
+                                        "txt": "Opening Hours"
+                                    },
+                                    "cmps": []
+                                },
+                                {
+                                    "id": "UEt14W",
+                                    "type": "p",
+                                    "name": "",
+                                    "content": {
+                                        "txt": "Sun - Thu: 10am - 10pm  Fri - Sat: 10am - 11pm"
+                                    },
+                                    "cmps": [
+                                        {
+                                            "id": "0WARXd",
+                                            "type": "br",
+                                            "name": "",
+                                            "cmps": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "Hlrjnw",
+                            "type": "div",
+                            "name": "follow",
+                            "cmps": [
+                                {
+                                    "id": "kF3XLy",
+                                    "type": "span",
+                                    "name": "",
+                                    "content": {
+                                        "txt": "Follow Us"
+                                    },
+                                    "cmps": []
+                                },
+                                {
+                                    "id": "sIn5yp",
+                                    "type": "div",
+                                    "name": "social-links",
+                                    "cmps": [
+                                        {
+                                            "id": "AXCtc4",
+                                            "type": "div",
+                                            "name": "",
+                                            "cmps": [
+                                                {
+                                                    "id": "JlSOIp",
+                                                    "type": "a",
+                                                    "name": "",
+                                                    "content": {
+                                                        "txt": "Instagram",
+                                                        "href": "about:blank#"
+                                                    },
+                                                    "cmps": []
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "F0ceDB",
+                                            "type": "div",
+                                            "name": "",
+                                            "cmps": [
+                                                {
+                                                    "id": "CJvqqM",
+                                                    "type": "a",
+                                                    "name": "",
+                                                    "content": {
+                                                        "txt": "Facebook",
+                                                        "href": "about:blank#"
+                                                    },
+                                                    "cmps": []
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "QlgPWS",
+                                            "type": "div",
+                                            "name": "",
+                                            "cmps": [
+                                                {
+                                                    "id": "F52E2W",
+                                                    "type": "a",
+                                                    "name": "",
+                                                    "content": {
+                                                        "txt": "TikTok",
+                                                        "href": "about:blank#"
+                                                    },
+                                                    "cmps": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "X8mP1y",
+                    "type": "div",
+                    "name": "subscribe",
+                    "cmps": [
+                        {
+                            "id": "0LJr9q",
+                            "type": "span",
+                            "name": "",
+                            "content": {
+                                "txt": "Subscribe to our newsletter for some sweet stuff"
+                            },
+                            "cmps": []
+                        },
+                        {
+                            "id": "z8aOyC",
+                            "type": "label",
+                            "name": "",
+                            "content": {
+                                "txt": "Enter your mail *",
+                                "htmlFor": "email"
+                            },
+                            "cmps": [
+                                {
+                                    "id": "6vKU4Q",
+                                    "type": "input",
+                                    "name": "",
+                                    "inputName": "Enter your mail *",
+                                    "content": {
+                                        "inputId": "email",
+                                        "placeholder": "quix@appsus.com"
+                                    },
+                                    "cmps": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": "Eq2vPd",
+                            "type": "button",
+                            "name": "",
+                            "content": {
+                                "txt": "Subscribe"
+                            },
+                            "cmps": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "rdCvE1",
+            "type": "div",
+            "name": "footer",
+            "cmps": [
+                {
+                    "id": "zO2Pm7",
+                    "type": "span",
+                    "name": "",
+                    "content": {
+                        "txt": "© 2035 by Sugar & Cream. Power and secured by"
+                    },
+                    "cmps": []
+                },
+                {
+                    "id": "KNhMqz",
+                    "type": "a",
+                    "name": "",
+                    "content": {
+                        "txt": "quix",
+                        "href": ""
+                    },
+                    "cmps": []
+                }
+            ]
+        }
+    ],
+    "themeClass": "wap6-primary",
+    "breakpoints": { "tabletLayout": 800 },
+    "msgs": {
+        "guest1": [
+            { "by": "customer", "txt": "Hey, man! What's up, Mr Stark?", "date": 1674733305792 },
+            { "by": "owner", "txt": "Kid, where'd you come from?", "date": 1674133305792 },
+            { "by": "customer", "txt": "Field trip!", "date": 1674133305792 },
+            {
+                "by": "owner",
+                "txt": "Uh, what is this guy's problem, Mr. Stark?",
+                "date": 1674133305792
+            },
+            {
+                "by": "customer",
+                "txt": "Uh, he's from space, he came here to steal a necklace from a wizard.",
+                "date": 1674133305792
+            }
+        ],
+        "guest2": [
+            { "by": "customer", "txt": "hahaha", "date": 1674133305792 },
+            { "by": "owner", "txt": "Yes this is lit", "date": 1674133305792 },
+            { "by": "customer", "txt": "help me please!", "date": 1674133305792 },
+            { "by": "owner", "txt": "NOOO!" },
+            { "by": "customer", "txt": "I love Wix!", "date": 1674133305792 }
+        ]
+    },
+    "thumbnail": "https://res.cloudinary.com/dotasvsuv/image/upload/v1674563731/wap-6-thumbnail_fcovpe.jpg",
+    "title": "Cafe & Bakery"
+}
