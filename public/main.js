@@ -2,7 +2,7 @@ import { carService } from './services/car.service.js'
 import { userService } from './services/user.service.js'
 import { utilService } from './services/util.service.js'
 
-console.log('Simple driver to test some API calls')
+// console.log('Simple driver to test some API calls')
 
 window.onLoadCars = onLoadCars
 window.onLoadUsers = onLoadUsers
@@ -50,7 +50,7 @@ async function onAddCarMsg() {
 }
 
 function render(title, mix = '') {
-    console.log(title, mix)
+    // console.log(title, mix)
     const output = utilService.prettyJSON(mix)
     document.querySelector('h2').innerText = title
     document.querySelector('pre').innerHTML = output

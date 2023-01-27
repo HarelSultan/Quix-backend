@@ -21,7 +21,7 @@ async function signup(req, res) {
         const credentials = req.body
         // Never log passwords
         // logger.debug(credentials)
-        console.log(credentials)
+        // console.log(credentials)
         const account = await authService.signup(credentials)
         logger.debug(`auth.route - new account created: ` + JSON.stringify(account))
         const user = await authService.login(credentials.username, credentials.password)
@@ -38,7 +38,7 @@ async function signup(req, res) {
 async function googleLoginSignup(req, res) {
     try {
         const credentials = req.body
-        console.log(credentials)
+        // console.log(credentials)
         const isSignedUp = await userService.getByUsername(credentials.username)
         if (!isSignedUp) {
             await authService.signup(credentials)
@@ -47,7 +47,7 @@ async function googleLoginSignup(req, res) {
         const loginToken = authService.getLoginToken(user)
         res.cookie('loginToken', loginToken, { sameSite: 'None', secure: true })
         res.json(user)
-        console.log(user)
+        // console.log(user)
     } catch (err) {
         logger.error('Failed to Login ' + err)
         res.status(401).send({ err: 'Failed to Login' })

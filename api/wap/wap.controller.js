@@ -8,9 +8,9 @@ async function getWaps(req, res) {
         const filterBy = {
             owner: req.query.owner || '',
         }
-        console.log('filterBy', filterBy)
+        // console.log('filterBy', filterBy)
         const waps = await wapService.query(filterBy)
-        console.log('waps', waps)
+        // console.log('waps', waps)
         res.json(waps)
     } catch (err) {
         logger.error('Failed to get waps', err)

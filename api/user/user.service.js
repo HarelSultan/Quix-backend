@@ -79,7 +79,7 @@ async function update(user) {
             boards: user.boards,
         }
         const collection = await dbService.getCollection('user')
-        console.log(collection)
+        // console.log(collection)
         await collection.updateOne({ _id: userToSave._id }, { $set: userToSave })
         return userToSave
     } catch (err) {

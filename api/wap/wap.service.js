@@ -35,7 +35,7 @@ async function query(filterBy = { owner: '' }) {
 
 async function getById(wapId) {
     // can be merged to one func with getByUrl
-    console.log(wapId)
+    // console.log(wapId)
     try {
         const collection = await dbService.getCollection('wap')
         const wap = collection.findOne({ _id: ObjectId(wapId) })
@@ -93,7 +93,7 @@ async function update(wap) {
             msgs: wap.msgs,
             schedule: wap.schedule,
         }
-        console.log(wapToSave)
+        // console.log(wapToSave)
         const collection = await dbService.getCollection('wap')
         await collection.updateOne({ _id: ObjectId(wap._id) }, { $set: wapToSave })
         return wap

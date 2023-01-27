@@ -13,7 +13,8 @@ function setupSocketAPI(http) {
         socket.on('disconnect', socket => {
             logger.info(`Socket disconnected [id: ${socket.id}]`)
         })
-        socket.on('chat-set-room', room => {
+        socket.on('set-wap-room', room => {
+            console.log('room:', room)
             if (socket.myRoom === room) return
             if (socket.myRoom) {
                 socket.leave(socket.myRoom)
@@ -21,6 +22,23 @@ function setupSocketAPI(http) {
             }
             socket.join(room)
             socket.myRoom = room
+        })
+        socket.on('update-wap', wap => {
+            // console.log('wap:', wap)
+            broadcast({
+                type: 'updated-wap',
+                data: wap,
+                room: socket.myRoom,
+                userId: socket.id,
+            })
+        })
+        socket.on('update-mouse-pos', mousePos => {
+            broadcast({
+                type: 'mouse-move',
+                data: mousePos,
+                room: socket.myRoom,
+                userId: socket.id,
+            })
         })
         socket.on('chat-send-msg', msg => {
             logger.info(`New chat msg from socket [id: ${socket.id}], emitting to room ${socket.myRoom}`)
@@ -79,23 +97,6 @@ function setupSocketAPI(http) {
             socket.join(wapId)
             socket.currWap = wapId
         })
-
-        socket.on('user-mouse-move', mousePos => {
-            broadcast({
-                type: 'mouse-move',
-                data: { id: socket.id, pos: mousePos },
-                room: socket.currWap,
-                userId: socket.id,
-            })
-        })
-        socket.on('update-wap', wap => {
-            broadcast({
-                type: 'updated-wap',
-                data: wap,
-                room: socket.currWap,
-                userId: socket.id,
-            })
-        })
     })
 }
 
@@ -121,10 +122,12 @@ async function emitToUser({ type, data, userId }) {
 // Optionally, broadcast to a room / to all
 async function broadcast({ type, data, room = null, userId }) {
     userId = userId.toString()
-
     logger.info(`Broadcasting event: ${type}`)
+    // console.log('room:', room)
     const excludedSocket = await _getUserSocket(userId)
+    // console.log(excludedSocket)
     if (room && excludedSocket) {
+        console.log(':')
         logger.info(`Broadcast to room ${room} excluding user: ${userId}`)
         excludedSocket.broadcast.to(room).emit(type, data)
     } else if (excludedSocket) {
@@ -141,7 +144,9 @@ async function broadcast({ type, data, room = null, userId }) {
 
 async function _getUserSocket(userId) {
     const sockets = await _getAllSockets()
+    // console.log('sockets:', sockets)
     const socket = sockets.find(s => s.userId === userId)
+    console.log('socket:', socket)
     return socket
 }
 async function _getAllSockets() {
