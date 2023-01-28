@@ -11,6 +11,8 @@ async function query(filterBy = { owner: '' }) {
 
         if (filterBy.owner) {
             let waps = await collection.find({ owner: filterBy.owner }).toArray()
+            console.log(filterBy.owner)
+            console.log(waps)
             waps = waps.reduce((acc, wap) => {
                 // console.log(wap)
                 acc.push({

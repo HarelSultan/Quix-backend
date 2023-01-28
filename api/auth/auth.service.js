@@ -1,6 +1,7 @@
 const Cryptr = require('cryptr')
 const bcrypt = require('bcrypt')
 const userService = require('../user/user.service')
+const wapService = require('../wap/wap.service')
 const logger = require('../../services/logger.service')
 const cryptr = new Cryptr(process.env.SECRET1 || 'Secret-Puk-1234')
 
@@ -21,7 +22,9 @@ async function login(username, password) {
     // TODO: un-comment for real login
     const match = await bcrypt.compare(password, user.password)
     if (!match) return Promise.reject('Invalid username or password')
-
+    const userSites = await wapService.query({ owner: user._id.toString() })
+    if (userSites) user.sites = userSites
+    console.log(userSites)
     delete user.password
     user._id = user._id.toString()
     return user
