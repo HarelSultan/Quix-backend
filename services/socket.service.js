@@ -39,8 +39,8 @@ function setupSocketAPI(http) {
             })
         })
         socket.on('guest-msg', ({ guestMsg, to }) => {
-            console.log('GUEST MSG', guestMsg)
             console.log('GUEST MSG FROM socket id', socket.id, 'socket.userId:', socket.userId, 'TO OWNER', to)
+            console.log('GUEST MSG', guestMsg)
             logger.info(`New chat msg from socket [id: ${socket.id}], emitting to ${to}`)
             // emits to all sockets:
             // gIo.emit('chat addMsg', msg)
