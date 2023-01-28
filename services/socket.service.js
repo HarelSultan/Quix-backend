@@ -46,7 +46,11 @@ function setupSocketAPI(http) {
             // gIo.emit('chat addMsg', msg)
             // emits only to sockets in the same room
             // gIo.to(socket.myRoom).emit('guest-add-msg', msg)
-            gIo.sockets.to(to).emit('guest-add-msg', { by: 'customer', txt: `${guestMsg}`, date: new Date().getTime() })
+            emitToUser({
+                type: 'guest-add-msg',
+                data: [guestMsg[0], { by: 'customer', txt: `${guestMsg[1]}`, date: new Date().getTime() }],
+                userId: to,
+            })
         })
         socket.on('user-watch', userId => {
             logger.info(`user-watch from socket [id: ${socket.id}], on user ${userId}`)
@@ -63,6 +67,8 @@ function setupSocketAPI(http) {
         socket.on('set-user-socket', userId => {
             logger.info(`Setting socket.userId = ${userId} for socket [id: ${socket.id}]`)
             socket.userId = userId
+            // socket.id = userId
+            console.log('userId:', userId)
         })
         socket.on('unset-user-socket', () => {
             logger.info(`Removing socket.userId for socket [id: ${socket.id}]`)
@@ -119,13 +125,21 @@ function emitTo({ type, data, label }) {
 }
 
 async function emitToUser({ type, data, userId }) {
-    userId = userId.toString()
-    const socket = await _getUserSocket(userId)
-
+    userId = userId.toString() || userId
+    // const socket = await _getUserSocket(userId)
+    const sockets = await _getAllSockets()
+    const socket = sockets.find(s => {
+        console.log(s.id, userId)
+        return s.userId == userId
+    })
+    // console.log(socket, 'SOCKET')
     if (socket) {
+        console.log('SENDING')
+        console.log(`Emiting event: ${type} to user: ${userId} socket [id: ${socket.id}]`)
         logger.info(`Emiting event: ${type} to user: ${userId} socket [id: ${socket.id}]`)
         socket.emit(type, data)
     } else {
+        console.log(`No active socket for user: ${userId}`)
         logger.info(`No active socket for user: ${userId}`)
         // _printSockets()
     }
@@ -154,7 +168,9 @@ async function broadcast({ type, data, room = null, userId }) {
 
 async function _getUserSocket(userId) {
     const sockets = await _getAllSockets()
-    const socket = sockets.find(s => s.id === userId)
+    const socket = sockets.find(s => {
+        return s.id === userId
+    })
     return socket
 }
 async function _getAllSockets() {
