@@ -12,7 +12,7 @@ async function query(filterBy = { owner: '' }) {
         if (filterBy.owner) {
             let waps = await collection.find({ owner: filterBy.owner }).toArray()
             waps = waps.reduce((acc, wap) => {
-                console.log(wap)
+                // console.log(wap)
                 acc.push({
                     _id: wap._id,
                     leadsBoards: wap.leadsBoards,
@@ -55,7 +55,7 @@ async function getByUrl(url) {
     try {
         const collection = await dbService.getCollection('wap')
         const wap = await collection.findOne({ url })
-        console.log(wap)
+        // console.log(wap)
         return wap
     } catch (err) {
         logger.error(`Cannot find wap by url ${url}`, err)
@@ -108,7 +108,7 @@ async function update(wap) {
             wapToSave.isPublished = true
         }
 
-        console.log(wapToSave)
+        // console.log(wapToSave)
         const collection = await dbService.getCollection('wap')
         await collection.updateOne({ _id: ObjectId(wap._id) }, { $set: wapToSave })
         return wap
