@@ -1,6 +1,7 @@
 {
     "name": "wap-7",
     "owner": "admin",
+    "chatStartingMsg": "Hi there! Thanks for reaching out, How can I assist you today?",
     "leadsBoards": [
         {
             "id": "rrEXzIBV",
@@ -851,7 +852,7 @@
         }
     ],
     "themeClass": "wap7-primary",
-    "breakpoints": { "mobileLayout": 700, "tabletLayout": 123, "desktopLayout": 1400 },
+    "breakpoints": { "mobileLayout": 700, "tabletLayout": 1230, "desktopLayout": 1400 },
     "msgs": {
         "guest1": [
             { "by": "customer", "txt": "Hey, man! What's up, Mr Stark?", "date": 1674733305792 },

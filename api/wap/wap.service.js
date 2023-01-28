@@ -12,6 +12,7 @@ async function query(filterBy = { owner: '' }) {
         if (filterBy.owner) {
             let waps = await collection.find({ owner: filterBy.owner }).toArray()
             waps = waps.reduce((acc, wap) => {
+                console.log(wap)
                 acc.push({
                     _id: wap._id,
                     leadsBoards: wap.leadsBoards,
@@ -20,6 +21,10 @@ async function query(filterBy = { owner: '' }) {
                     title: wap.title,
                     thumbnail: wap.thumbnail,
                     schedule: wap.schedule,
+                    url: wap.url,
+                    chatStartingMsg: wap.chatStartingMsg,
+                    isPublished: wap.isPublished,
+                    owner: wap.owner,
                 })
                 return acc
             }, [])
@@ -38,7 +43,7 @@ async function getById(wapId) {
     // console.log(wapId)
     try {
         const collection = await dbService.getCollection('wap')
-        const wap = collection.findOne({ _id: ObjectId(wapId) })
+        const wap = await collection.findOne({ _id: ObjectId(wapId) })
         return wap
     } catch (err) {
         logger.error(`while finding wap ${wapId}`, err)
@@ -49,7 +54,8 @@ async function getById(wapId) {
 async function getByUrl(url) {
     try {
         const collection = await dbService.getCollection('wap')
-        const wap = collection.findOne({ url })
+        const wap = await collection.findOne({ url })
+        console.log(wap)
         return wap
     } catch (err) {
         logger.error(`Cannot find wap by url ${url}`, err)
@@ -72,6 +78,7 @@ async function add(wap) {
     try {
         const collection = await dbService.getCollection('wap')
         wap.owner = 'guest'
+        wap.isPublished = false
         await collection.insertOne(wap)
         return wap
     } catch (err) {
@@ -83,10 +90,8 @@ async function add(wap) {
 async function update(wap) {
     try {
         const wapToSave = {
-            url: wap.url,
-            cmps: wap.cmps,
-            leadsBoards: wap.leadsBoards,
             owner: wap.owner,
+            leadsBoards: wap.leadsBoards,
             title: wap.title,
             subscribers: wap.subscribers,
             chatStartingMsg: wap.chatStartingMsg,
@@ -94,7 +99,16 @@ async function update(wap) {
             schedule: wap.schedule,
         }
 
-        // console.log(wapToSave)
+        if (wap.cmps) wapToSave.cmps = wap.cmps
+
+        if (!wap.isPublished && wap.url) {
+            const isUrlTaken = await getByUrl(wap.url)
+            if (isUrlTaken) throw new Error('Url is already taken')
+            wapToSave.url = wap.url
+            wapToSave.isPublished = true
+        }
+
+        console.log(wapToSave)
         const collection = await dbService.getCollection('wap')
         await collection.updateOne({ _id: ObjectId(wap._id) }, { $set: wapToSave })
         return wap

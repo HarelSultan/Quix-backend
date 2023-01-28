@@ -38,17 +38,28 @@ function setupSocketAPI(http) {
                 userId: socket.id,
             })
         })
-        socket.on('chat-send-msg', msg => {
-            logger.info(`New chat msg from socket [id: ${socket.id}], emitting to room ${socket.myRoom}`)
+        socket.on('guest-msg', ({ guestMsg, to }) => {
+            console.log('GUEST MSG', guestMsg)
+            console.log('GUEST MSG FROM socket id', socket.id, 'socket.userId:', socket.userId, 'TO OWNER', to)
+            logger.info(`New chat msg from socket [id: ${socket.id}], emitting to ${to}`)
             // emits to all sockets:
             // gIo.emit('chat addMsg', msg)
             // emits only to sockets in the same room
-            gIo.to(socket.myRoom).emit('chat-add-msg', msg)
+            // gIo.to(socket.myRoom).emit('guest-add-msg', msg)
+            gIo.sockets.to(to).emit('guest-add-msg', { by: 'customer', txt: `${guestMsg}`, date: new Date().getTime() })
         })
         socket.on('user-watch', userId => {
             logger.info(`user-watch from socket [id: ${socket.id}], on user ${userId}`)
             socket.join('watching:' + userId)
         })
+
+        socket.on('owner-msg', ({ ownerMsg, to }) => {
+            console.log('OWNER MSG FROM socket id', socket.id, 'socket.userId:', socket.userId, 'TO GUEST', to)
+            console.log(ownerMsg)
+            logger.info(`New chat msg from socket [id: ${socket.id}], emitting to ${to}`)
+            gIo.sockets.to(to).emit('owner-add-msg', { by: 'owner', txt: `${ownerMsg}`, date: new Date().getTime() })
+        })
+
         socket.on('set-user-socket', userId => {
             logger.info(`Setting socket.userId = ${userId} for socket [id: ${socket.id}]`)
             socket.userId = userId

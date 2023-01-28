@@ -25,7 +25,8 @@
         "days": ["sunday", "monday", "tuesday", "wednesday", "thursday"],
         "startHour": 8,
         "endHour": 17,
-        "meetings": []
+        "meetings": [],
+        "chatStartingMsg": "Hi there! Thanks for reaching out, How can I assist you today?"
     },
     "subscribers": [],
     "cmps": [
