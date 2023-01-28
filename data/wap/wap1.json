@@ -1,6 +1,7 @@
 {
-    "name": "wap-1",
+    "name": "wap1",
     "owner": "admin",
+    "palette": ["#ffbf23", "#ffd7ef", "#eef", "#101010"],
     "leadsBoards": [
         {
             "id": "g3Dlyxwl",

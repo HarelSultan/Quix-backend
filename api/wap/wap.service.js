@@ -97,6 +97,7 @@ async function update(wap) {
             chatStartingMsg: wap.chatStartingMsg,
             msgs: wap.msgs,
             schedule: wap.schedule,
+            themeClass: wap.themeClass,
         }
 
         if (wap.cmps) wapToSave.cmps = wap.cmps

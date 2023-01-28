@@ -68,33 +68,37 @@ function setupSocketAPI(http) {
             logger.info(`Removing socket.userId for socket [id: ${socket.id}]`)
             delete socket.userId
         })
-        socket.on('send-lead', ({ room, wap, title, date, email, location, name, phone, schedule }) => {
-            logger.info(`New lead from socket [id:${socket.id}]`)
-            broadcast({
-                type: 'add-lead',
-                data: { wap, title, date, email, location, name, phone, schedule },
-                room,
-                userId: socket.id,
-            })
-        })
 
-        socket.on('send-subscription', ({ room, wap, email, date }) => {
+        socket.on('send-subscription', ({ data, to }) => {
             logger.info(`New subscription from socket [id:${socket.id}]`)
-            broadcast({
+            console.log(to)
+            console.log(data)
+            emitTo({
                 type: 'add-subscription',
-                data: { wap, email, date },
-                room,
-                userId: socket.id,
+                data,
+                userId: to,
             })
         })
 
-        socket.on('send-schedule', ({ room, wap, schedule }) => {
+        socket.on('send-lead', ({ data, to }) => {
+            logger.info(`New lead from socket [id:${socket.id}]`)
+            console.log(to)
+            console.log(data)
+            emitTo({
+                type: 'add-lead',
+                data,
+                userId: to,
+            })
+        })
+
+        socket.on('send-schedule', ({ data, to }) => {
             logger.info(`New appointment from socket [id:${socket.id}]`)
-            broadcast({
+            console.log(to)
+            console.log(data)
+            emitTo({
                 type: 'add-schedule',
-                data: { wap, schedule },
-                room,
-                userId: socket.id,
+                data,
+                userId: to,
             })
         })
 

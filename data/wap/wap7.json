@@ -1,7 +1,8 @@
 {
-    "name": "wap-7",
+    "name": "wap7",
     "owner": "admin",
     "chatStartingMsg": "Hi there! Thanks for reaching out, How can I assist you today?",
+    "palette": ["#ffe2c1", "#c6bcff", "#000000", "#4a34c7"],
     "leadsBoards": [
         {
             "id": "rrEXzIBV",
