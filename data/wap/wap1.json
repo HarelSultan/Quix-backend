@@ -745,30 +745,7 @@
     ],
     "themeClass": "wap1-primary",
     "breakpoints": { "mobileLayout": 800, "tabletLayout": 1350 },
-    "msgs": {
-        "guest1": [
-            { "by": "customer", "txt": "Hey, man! What's up, Mr Stark?", "date": 1674733305792 },
-            { "by": "owner", "txt": "Kid, where'd you come from?", "date": 1674133305792 },
-            { "by": "customer", "txt": "Field trip!", "date": 1674133305792 },
-            {
-                "by": "owner",
-                "txt": "Uh, what is this guy's problem, Mr. Stark?",
-                "date": 1674133305792
-            },
-            {
-                "by": "customer",
-                "txt": "Uh, he's from space, he came here to steal a necklace from a wizard.",
-                "date": 1674133305792
-            }
-        ],
-        "guest2": [
-            { "by": "customer", "txt": "hahaha", "date": 1674133305792 },
-            { "by": "owner", "txt": "Yes this is lit", "date": 1674133305792 },
-            { "by": "customer", "txt": "help me please!", "date": 1674133305792 },
-            { "by": "owner", "txt": "NOOO!" },
-            { "by": "customer", "txt": "I love Wix!", "date": 1674133305792 }
-        ]
-    },
+    "msgs": {},
     "thumbnail": "https://res.cloudinary.com/dotasvsuv/image/upload/v1674060298/wap-1-index-thumbnail_ygzwg7.jpg",
     "title": "Tech Company"
 }

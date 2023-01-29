@@ -27,6 +27,8 @@ async function query(filterBy = { owner: '' }) {
                     chatStartingMsg: wap.chatStartingMsg,
                     isPublished: wap.isPublished,
                     owner: wap.owner,
+                    demoData: wap.demoData,
+                    visitors: wap.visitors,
                 })
                 return acc
             }, [])
