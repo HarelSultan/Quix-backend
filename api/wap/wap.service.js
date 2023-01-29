@@ -115,7 +115,7 @@ async function update(wap) {
             msgs: wap.msgs,
             schedule: wap.schedule,
             themeClass: wap.themeClass,
-            visitor: wap.visitors,
+            visitors: wap.visitors,
         }
 
         if (wap.cmps) wapToSave.cmps = wap.cmps
