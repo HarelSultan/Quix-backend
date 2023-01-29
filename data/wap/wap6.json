@@ -5,31 +5,406 @@
     "palette": ["#ffc098", "#414581", "#fff9f5", "#303030"],
     "leadsBoards": [
         {
-            "id": "af8B6k20",
+            "id": "bQ0F7kc3",
             "title": "New",
-            "items": []
+            "items": [
+                {
+                    "id": "0RxBZq",
+                    "data": {
+                        "First Name": "Abner",
+                        "Last Name": "SkilesSkiles",
+                        "Email": "kgrady@gmail.com",
+                        "date": 1674559639000.0
+                    },
+                    "status": "new"
+                },
+                {
+                    "id": "2mx2CB",
+                    "data": {
+                        "First Name": "Kelsi ",
+                        "Last Name": "Daugherty",
+                        "Email": "providenci82@gmailvn.net",
+                        "date": 1674584839000.0
+                    },
+                    "status": "new"
+                },
+                {
+                    "id": "kfxJdG",
+                    "data": {
+                        "First Name": "Sabrina ",
+                        "Last Name": "Runolfsson ",
+                        "Email": "jarrell93@maill.dev",
+                        "date": 1674584839000.0
+                    },
+                    "status": "new"
+                },
+                {
+                    "id": "q5zCQJ",
+                    "data": {
+                        "First Name": "Dudley ",
+                        "Last Name": "Rippin",
+                        "Email": "dock20@udinnews.com",
+                        "date": 1674602839000.0
+                    },
+                    "status": "new"
+                },
+                {
+                    "id": "Aouspc",
+                    "data": {
+                        "First Name": "Matteo ",
+                        "Last Name": "Bruen",
+                        "Email": "qbogisich@luddo.me",
+                        "date": 1674689239000.0
+                    },
+                    "status": "new"
+                },
+                {
+                    "id": "OVzG9w",
+                    "data": {
+                        "First Name": "Elias ",
+                        "Last Name": "Mills ",
+                        "Email": "xkutch@easygbd.com",
+                        "date": 1674718039000.0
+                    },
+                    "status": "new"
+                }
+            ]
         },
         {
-            "id": "ULFqd4mw",
+            "id": "XRlLtwvl",
             "title": "In Progress",
-            "items": []
+            "items": [
+                {
+                    "id": "cviPhs",
+                    "data": {
+                        "First Name": "Conner ",
+                        "Last Name": "Rutherford",
+                        "Email": "abdul97@indmeds.com",
+                        "date": 1674286039000.0
+                    },
+                    "status": "new"
+                },
+                {
+                    "id": "lodSem",
+                    "data": {
+                        "First Name": "Orie ",
+                        "Last Name": "Heidenreich",
+                        "Email": "kassandrai@gmail.com",
+                        "date": 1674286039000.0
+                    },
+                    "status": "new"
+                },
+                {
+                    "id": "h4E8xB",
+                    "data": {
+                        "First Name": "Deontae ",
+                        "Last Name": "Abernathy",
+                        "Email": "tyrese@packiu.com",
+                        "date": 1674372439000.0
+                    },
+                    "status": "new"
+                }
+            ]
         },
         {
-            "id": "01OIFtPh",
+            "id": "AReH7qzk",
             "title": "Done",
-            "items": []
+            "items": [
+                {
+                    "id": "Yp5bSC",
+                    "data": {
+                        "First Name": "Eleanore",
+                        "Last Name": "Stoltenberg ",
+                        "Email": "cpredovic@gmail.com",
+                        "date": 1674113239000.0
+                    },
+                    "status": "new"
+                },
+                {
+                    "id": "MbTUyy",
+                    "data": {
+                        "First Name": "Jeanie ",
+                        "Last Name": "Bergnaum",
+                        "Email": "morissette.elia@bora.com",
+                        "date": 1674631639000.0
+                    },
+                    "status": "new"
+                }
+            ]
         }
     ],
     "schedule": {
-        "eventDuration": 30,
+        "eventDuration": 90,
         "daysForward": 6,
-        "data": [],
+        "data": [
+            {
+                "id": 0,
+                "startTime": "2023-01-29T06:00:00.000Z",
+                "endTime": "2023-01-29T07:30:00.000Z"
+            },
+            {
+                "id": 1,
+                "startTime": "2023-01-29T07:30:00.000Z",
+                "endTime": "2023-01-29T09:00:00.000Z"
+            },
+            {
+                "id": 2,
+                "startTime": "2023-01-29T09:00:00.000Z",
+                "endTime": "2023-01-29T10:30:00.000Z"
+            },
+            {
+                "id": 3,
+                "startTime": "2023-01-29T10:30:00.000Z",
+                "endTime": "2023-01-29T12:00:00.000Z"
+            },
+            {
+                "id": 4,
+                "startTime": "2023-01-29T12:00:00.000Z",
+                "endTime": "2023-01-29T13:30:00.000Z"
+            },
+            {
+                "id": 5,
+                "startTime": "2023-01-29T13:30:00.000Z",
+                "endTime": "2023-01-29T15:00:00.000Z"
+            },
+            {
+                "id": 6,
+                "startTime": "2023-01-30T06:00:00.000Z",
+                "endTime": "2023-01-30T07:30:00.000Z"
+            },
+            {
+                "id": 7,
+                "startTime": "2023-01-30T07:30:00.000Z",
+                "endTime": "2023-01-30T09:00:00.000Z"
+            },
+            {
+                "id": 8,
+                "startTime": "2023-01-30T09:00:00.000Z",
+                "endTime": "2023-01-30T10:30:00.000Z"
+            },
+            {
+                "id": 9,
+                "startTime": "2023-01-30T10:30:00.000Z",
+                "endTime": "2023-01-30T12:00:00.000Z"
+            },
+            {
+                "id": 10,
+                "startTime": "2023-01-30T12:00:00.000Z",
+                "endTime": "2023-01-30T13:30:00.000Z"
+            },
+            {
+                "id": 11,
+                "startTime": "2023-01-30T13:30:00.000Z",
+                "endTime": "2023-01-30T15:00:00.000Z"
+            },
+            {
+                "id": 12,
+                "startTime": "2023-01-31T06:00:00.000Z",
+                "endTime": "2023-01-31T07:30:00.000Z"
+            },
+            {
+                "id": 13,
+                "startTime": "2023-01-31T07:30:00.000Z",
+                "endTime": "2023-01-31T09:00:00.000Z"
+            },
+            {
+                "id": 14,
+                "startTime": "2023-01-31T09:00:00.000Z",
+                "endTime": "2023-01-31T10:30:00.000Z"
+            },
+            {
+                "id": 15,
+                "startTime": "2023-01-31T10:30:00.000Z",
+                "endTime": "2023-01-31T12:00:00.000Z"
+            },
+            {
+                "id": 16,
+                "startTime": "2023-01-31T12:00:00.000Z",
+                "endTime": "2023-01-31T13:30:00.000Z"
+            },
+            {
+                "id": 17,
+                "startTime": "2023-01-31T13:30:00.000Z",
+                "endTime": "2023-01-31T15:00:00.000Z"
+            },
+            {
+                "id": 19,
+                "startTime": "2023-02-01T07:30:00.000Z",
+                "endTime": "2023-02-01T09:00:00.000Z"
+            },
+            {
+                "id": 20,
+                "startTime": "2023-02-01T09:00:00.000Z",
+                "endTime": "2023-02-01T10:30:00.000Z"
+            },
+            {
+                "id": 21,
+                "startTime": "2023-02-01T10:30:00.000Z",
+                "endTime": "2023-02-01T12:00:00.000Z"
+            },
+            {
+                "id": 22,
+                "startTime": "2023-02-01T12:00:00.000Z",
+                "endTime": "2023-02-01T13:30:00.000Z"
+            },
+            {
+                "id": 23,
+                "startTime": "2023-02-01T13:30:00.000Z",
+                "endTime": "2023-02-01T15:00:00.000Z"
+            },
+            {
+                "id": 26,
+                "startTime": "2023-02-02T09:00:00.000Z",
+                "endTime": "2023-02-02T10:30:00.000Z"
+            },
+            {
+                "id": 27,
+                "startTime": "2023-02-02T10:30:00.000Z",
+                "endTime": "2023-02-02T12:00:00.000Z"
+            },
+            {
+                "id": 28,
+                "startTime": "2023-02-02T12:00:00.000Z",
+                "endTime": "2023-02-02T13:30:00.000Z"
+            },
+            {
+                "id": 29,
+                "startTime": "2023-02-02T13:30:00.000Z",
+                "endTime": "2023-02-02T15:00:00.000Z"
+            }
+        ],
         "days": ["sunday", "monday", "tuesday", "wednesday", "thursday"],
         "startHour": 8,
         "endHour": 17,
-        "meetings": []
+        "meetings": [
+            {
+                "fullname": "Bruce K. Shuler",
+                "phoneNumber": "325-357-6054",
+                "datetime": {
+                    "id": 3,
+                    "startTime": "2023-01-30T06:00:00.000Z",
+                    "endTime": "2023-01-30T09:00:00.000Z"
+                }
+            },
+            {
+                "fullname": "Danielle M. Gates",
+                "phoneNumber": "925-465-4213",
+                "datetime": {
+                    "id": 5,
+                    "startTime": "2023-01-30T12:00:00.000Z",
+                    "endTime": "2023-01-30T15:00:00.000Z"
+                }
+            },
+            {
+                "fullname": "Sandy S. Pinkham",
+                "phoneNumber": "405-388-2890",
+                "datetime": {
+                    "id": 6,
+                    "startTime": "2023-01-31T06:00:00.000Z",
+                    "endTime": "2023-01-31T09:00:00.000Z"
+                }
+            },
+            {
+                "fullname": "Elizabeth R. Scott",
+                "phoneNumber": "219-776-4655",
+                "datetime": {
+                    "id": 10,
+                    "startTime": "2023-02-01T09:00:00.000Z",
+                    "endTime": "2023-02-01T12:00:00.000Z"
+                }
+            },
+            {
+                "fullname": "Marvin E. Morris",
+                "phoneNumber": "203-605-6990",
+                "datetime": {
+                    "id": 13,
+                    "startTime": "2023-02-02T09:00:00.000Z",
+                    "endTime": "2023-02-02T12:00:00.000Z"
+                }
+            },
+            {
+                "fullname": "Guy K. Shelton",
+                "phoneNumber": "910-876-6948"
+            },
+            {
+                "fullname": "Audrey R. Braman",
+                "phoneNumber": "540-568-8843"
+            },
+            {
+                "fullname": "John B. Carpenter",
+                "phoneNumber": "262-385-4376"
+            },
+            {
+                "fullname": "John G. Barrett",
+                "phoneNumber": " 623-349-7050",
+                "datetime": {
+                    "id": 24,
+                    "startTime": "2023-02-02T06:00:00.000Z",
+                    "endTime": "2023-02-02T07:30:00.000Z"
+                }
+            },
+            {
+                "fullname": "Sonja G. Polley",
+                "phoneNumber": "404-260-3953"
+            },
+            {
+                "fullname": "Addie K. Price",
+                "phoneNumber": " 213-402-0180",
+                "datetime": {
+                    "id": 18,
+                    "startTime": "2023-02-01T06:00:00.000Z",
+                    "endTime": "2023-02-01T07:30:00.000Z"
+                }
+            },
+            {
+                "fullname": "Benita S. Moss",
+                "phoneNumber": "512-880-0496",
+                "datetime": {
+                    "id": 25,
+                    "startTime": "2023-02-02T07:30:00.000Z",
+                    "endTime": "2023-02-02T09:00:00.000Z"
+                }
+            }
+        ]
     },
-    "subscribers": [],
+    "subscribers": [
+        {
+            "email": " RebeccaCBoll@dayrep.com",
+            "date": 1674372439000.0
+        },
+        {
+            "email": " TabithaDMock@jourrapide.com",
+            "date": 1674458839000.0
+        },
+        {
+            "email": "JenniferGStevens@jourrapide.com",
+            "date": 1674545239000.0
+        },
+        {
+            "email": " RoyJReid@armyspy.com",
+            "date": 1674923574457.0
+        },
+        {
+            "email": "WallaceVRadcliffe@teleworm.us",
+            "date": 1674631639000.0
+        },
+        {
+            "email": "KennethRWashington@teleworm.us",
+            "date": 1674718039000.0
+        },
+        {
+            "email": "CharlesHPeterson@jourrapide.com",
+            "date": 1674804439000.0
+        },
+        {
+            "email": " MicheleJMosher@teleworm.us",
+            "date": 1674890839000.0
+        },
+        {
+            "email": "RichardTWu@armyspy.com",
+            "date": 1674890839000.0
+        }
+    ],
     "cmps": [
         {
             "id": "uogfLx",
@@ -715,27 +1090,173 @@
     "themeClass": "wap6-primary",
     "breakpoints": { "tabletLayout": 800 },
     "msgs": {
-        "guest1": [
-            { "by": "customer", "txt": "Hey, man! What's up, Mr Stark?", "date": 1674733305792 },
-            { "by": "owner", "txt": "Kid, where'd you come from?", "date": 1674133305792 },
-            { "by": "customer", "txt": "Field trip!", "date": 1674133305792 },
+        "Itay": [
+            {
+                "by": "customer",
+                "txt": "Hello, I was wondering if you have any gluten-free options on your menu?",
+                "date": 1674934039000.0
+            },
+            {
+                "by": "owner",
+                "txt": "Yes, we do have several gluten-free options available.",
+                "date": 1674934039000.0
+            },
+            {
+                "by": "customer",
+                "txt": "I was also wondering if you have any vegetarian options as well.",
+                "date": 1674934039000.0
+            },
+            {
+                "by": "owner",
+                "txt": "Yes, we have several vegetarian options available as well.",
+                "date": 1674934039000.0
+            },
+            {
+                "by": "customer",
+                "txt": "Thank you for your help!",
+                "date": 1674934039000.0
+            },
+            {
+                "by": "owner",
+                "txt": "You're welcome, we look forward to serving you soon. Have a great day!",
+                "date": 1674934039000.0
+            }
+        ],
+        "Roti": [
+            {
+                "by": "customer",
+                "txt": " Hi there! I was wondering if you have any vegetarian options on your menu?",
+                "date": 1674890839000.0
+            },
+            {
+                "by": "owner",
+                "txt": "Thank you very much!Yes, we have several vegetarian options available. Our menu is available on our website, would you like me to send you a link?",
+                "date": 1674890839000.0
+            },
+            {
+                "by": "customer",
+                "txt": "That would be great, thank you!",
+                "date": 1674890839000.0
+            },
+            {
+                "by": "owner",
+                "txt": " Is there anything else I can help you with?",
+                "date": 1674890839000.0
+            },
+            {
+                "by": "customer",
+                "txt": "No, that's all. Thank you for your help",
+                "date": 1674890839000.0
+            },
+            {
+                "by": "owner",
+                "txt": " You're welcome, we look forward to serving you soon. Have a great day!",
+                "date": 1674890839000.0
+            }
+        ],
+        "Vlad": [
+            {
+                "by": "customer",
+                "txt": "I just left 5/5 review!",
+                "date": 1674804439000.0
+            },
+            {
+                "by": "owner",
+                "txt": "Thank you very much!",
+                "date": 1674804439000.0
+            }
+        ],
+        "Roni": [
+            {
+                "by": "customer",
+                "txt": "Your hamburgers are AMAZING!!!",
+                "date": 1674718039000.0
+            }
+        ],
+        "Itzik": [
+            {
+                "by": "customer",
+                "txt": "I just want to say I had a great night yesterday! Thank you and I will come again!",
+                "date": 1674718039000.0
+            }
+        ],
+        "Aviv": [
+            {
+                "by": "customer",
+                "txt": "Are you open on friday night?",
+                "date": 1674631639000.0
+            },
+            {
+                "by": "owner",
+                "txt": "Yes we are!",
+                "date": 1674631639000.0
+            }
+        ],
+        "Betty": [
+            {
+                "by": "customer",
+                "txt": "Hello, can I please get some help?",
+                "date": 1674545239000.0
+            },
+            {
+                "by": "owner",
+                "txt": "Sure, I am working on it!",
+                "date": 1674545239000.0
+            }
+        ],
+        "Ron": [
+            {
+                "by": "customer",
+                "txt": "Hey, man! What's up, Mr Stark?",
+                "date": 1674458839000.0
+            },
+            {
+                "by": "owner",
+                "txt": "Kid, where'd you come from?",
+                "date": 1674458839000.0
+            },
+            {
+                "by": "customer",
+                "txt": "Field trip!",
+                "date": 1674458839000.0
+            },
             {
                 "by": "owner",
                 "txt": "Uh, what is this guy's problem, Mr. Stark?",
-                "date": 1674133305792
+                "date": 1674458839000.0
             },
             {
                 "by": "customer",
                 "txt": "Uh, he's from space, he came here to steal a necklace from a wizard.",
-                "date": 1674133305792
+                "date": 1674458839000.0
             }
         ],
-        "guest2": [
-            { "by": "customer", "txt": "hahaha", "date": 1674133305792 },
-            { "by": "owner", "txt": "Yes this is lit", "date": 1674133305792 },
-            { "by": "customer", "txt": "help me please!", "date": 1674133305792 },
-            { "by": "owner", "txt": "NOOO!" },
-            { "by": "customer", "txt": "I love Wix!", "date": 1674133305792 }
+        "Harel": [
+            {
+                "by": "customer",
+                "txt": "hahaha",
+                "date": 1674372439000.0
+            },
+            {
+                "by": "owner",
+                "txt": "Yes this is lit",
+                "date": 1674372439000.0
+            },
+            {
+                "by": "customer",
+                "txt": "help me please!",
+                "date": 1674372439000.0
+            },
+            {
+                "by": "owner",
+                "txt": "NOOO!",
+                "date": 1674372439000.0
+            },
+            {
+                "by": "customer",
+                "txt": "I love it!",
+                "date": 1674372439000.0
+            }
         ]
     },
     "thumbnail": "https://res.cloudinary.com/dotasvsuv/image/upload/v1674563731/wap-6-thumbnail_fcovpe.jpg",

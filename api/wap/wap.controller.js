@@ -43,13 +43,27 @@ async function getWapByUrl(req, res) {
 async function getWapToEdit(req, res) {
     try {
         const id = req.params.id
+        console.log('getting wap to edit')
         let demoWap = await wapService.getById(id)
         delete demoWap._id
-        wap = await wapService.add(demoWap)
+        const wap = await wapService.add(demoWap)
         res.json(wap)
     } catch (err) {
         logger.error('Failed to get wap', err)
         res.status(500).send({ err: 'Failed to get template to edit' })
+    }
+}
+
+async function duplicateWap(req, res) {
+    try {
+        const id = req.params.id
+        let copiedWap = await wapService.getById(id)
+        delete copiedWap._id
+        const wap = await wapService.duplicateWap(copiedWap)
+        res.json(wap)
+    } catch (err) {
+        logger.error('Failed to get wap', err)
+        res.status(500).send({ err: 'Failed to duplicate wap' })
     }
 }
 
@@ -127,6 +141,7 @@ module.exports = {
     removeWap,
     getWapByUrl,
     getWapToEdit,
+    duplicateWap,
     // addCarMsg,
     // removeCarMsg,
 }

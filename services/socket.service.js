@@ -75,13 +75,13 @@ function setupSocketAPI(http) {
             delete socket.userId
         })
 
-        socket.on('send-subscription', ({ data, to }) => {
+        socket.on('send-subscription', ({ email, to }) => {
             logger.info(`New subscription from socket [id:${socket.id}]`)
             console.log(to)
-            console.log(data)
-            emitTo({
+            console.log(email)
+            emitToUser({
                 type: 'add-subscription',
-                data,
+                data: email,
                 userId: to,
             })
         })
@@ -90,7 +90,7 @@ function setupSocketAPI(http) {
             logger.info(`New lead from socket [id:${socket.id}]`)
             console.log(to)
             console.log(data)
-            emitTo({
+            emitToUser({
                 type: 'add-lead',
                 data,
                 userId: to,
@@ -101,7 +101,7 @@ function setupSocketAPI(http) {
             logger.info(`New appointment from socket [id:${socket.id}]`)
             console.log(to)
             console.log(data)
-            emitTo({
+            emitToUser({
                 type: 'add-schedule',
                 data,
                 userId: to,
@@ -137,6 +137,7 @@ async function emitToUser({ type, data, userId }) {
         console.log('SENDING')
         console.log(`Emiting event: ${type} to user: ${userId} socket [id: ${socket.id}]`)
         logger.info(`Emiting event: ${type} to user: ${userId} socket [id: ${socket.id}]`)
+        console.log('SOCKET.USERID::', socket.userId, 'SOCKET DATA', data)
         socket.emit(type, data)
     } else {
         console.log(`No active socket for user: ${userId}`)

@@ -89,6 +89,19 @@ async function add(wap) {
     }
 }
 
+async function duplicateWap(wap) {
+    try {
+        const collection = await dbService.getCollection('wap')
+        wap.isPublished = false
+        wap.name = `${wap.name} - copy`
+        await collection.insertOne(wap)
+        return wap
+    } catch (err) {
+        logger.error('cannot duplicate wap', err)
+        throw err
+    }
+}
+
 async function update(wap) {
     try {
         const wapToSave = {
@@ -151,6 +164,7 @@ module.exports = {
     add,
     update,
     getByUrl,
+    duplicateWap,
     // addCarMsg,
     // removeCarMsg
 }
